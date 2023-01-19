@@ -10,4 +10,4 @@
 
 3. Your test-procom project is now ready to run. Serve the project with following command.
 
-:ng serve
+: ng serve
