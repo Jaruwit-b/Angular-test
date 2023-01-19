@@ -1,0 +1,12 @@
+<div [formGroup]="yearForm">
+    <div class="form-container">
+        <mat-form-field class="panel-input">
+            <mat-select formControlName="year" [required]="true" autocomplete="off" placeholder="year"
+                (ngModelChange)="onChange()">
+                <mat-option *ngFor="let data of yearList" [value]="data">
+                    {{data.name}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+<div class="panel-left-right" [formGroup]="totalAmountForm">
+    <div class="panel-left">
+        <p>5. Total amount of VAT, surcharge and penalty to be remitted (2.+3.+4.)</p>
+    </div>
+
+    <div class="panel-right">
+        <mat-form-field class="example-form-field">
+            <input matInput formControlName="totalAmount" [(ngModel)]="formService.totalAmount">
+        </mat-form-field>
+    </div>
+</div>

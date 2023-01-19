@@ -1,0 +1,39 @@
+.panel-left-right {
+    display: block;
+
+    .panel-left {
+        flex: 1;
+        margin: auto;
+    }
+
+    .panel-right {
+        flex: 1;
+        margin: auto;
+    }
+}
+
+@media (min-width: 576px) {
+    .panel-left-right {
+        display: flex;
+
+        .panel-right {
+            text-align: right;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .panel-left-right {
+        display: flex;
+
+        .panel-right {
+            text-align: right;
+        }
+    }
+}
+
+::ng-deep {
+    input.mat-input-element {
+        text-align: right;
+    }
+}

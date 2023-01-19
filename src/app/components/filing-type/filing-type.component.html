@@ -1,0 +1,7 @@
+<div [formGroup]="filingTypeForm">
+    <mat-radio-group formControlName="filingType" (ngModelChange)="onChange()">
+        <mat-radio-button class="panel-radio-button" *ngFor="let data of filingTypeList" [value]="data">
+            {{data.name}}
+        </mat-radio-button>
+    </mat-radio-group>
+</div>

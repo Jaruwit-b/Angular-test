@@ -1,0 +1,11 @@
+<div class="panel-left-right" [formGroup]="surchargeForm">
+    <div class="panel-left">
+        <p>3. Surcharge</p>
+    </div>
+
+    <div class="panel-right">
+        <mat-form-field class="example-form-field">
+            <input matInput formControlName="surcharge" [(ngModel)]="formService.surcharge">
+        </mat-form-field>
+    </div>
+</div>

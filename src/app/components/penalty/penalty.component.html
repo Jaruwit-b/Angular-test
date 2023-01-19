@@ -1,0 +1,11 @@
+<div class="panel-left-right" [formGroup]="penaltyForm">
+    <div class="panel-left">
+        <p>4. Penalty</p>
+    </div>
+
+    <div class="panel-right">
+        <mat-form-field class="example-form-field">
+            <input matInput formControlName="penalty" [(ngModel)]="formService.penalty">
+        </mat-form-field>
+    </div>
+</div>

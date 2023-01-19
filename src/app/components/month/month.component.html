@@ -1,0 +1,12 @@
+<div [formGroup]="monthForm">
+    <div class="form-container">
+        <mat-form-field class="panel-input">
+            <mat-select formControlName="month" [required]="true" autocomplete="off" placeholder="month"
+                (ngModelChange)="onChange()">
+                <mat-option *ngFor="let data of monthList" [value]="data" [disabled]="data.disabled">
+                    {{data.name}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+</div>

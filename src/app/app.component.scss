@@ -1,0 +1,96 @@
+.header {
+    border-color: black;
+    border-bottom: 2px solid;
+
+    .header-container {
+        margin: auto;
+        padding: 10px;
+        text-align: right !important;
+
+        .text {
+            display: inline-flex;
+        }
+    }
+
+    mat-icon {
+        margin: auto;
+    }
+}
+
+.title {
+    padding: 20px;
+}
+
+.button {
+    margin: auto;
+    text-align: center;
+}
+
+.form-container {
+    padding: 20px;
+
+    .card-border {
+        padding: 20px;
+        border-color: black;
+        border: 1px solid;
+    }
+}
+
+.panel-left-right {
+    display: block;
+
+    .panel-left {
+        flex: 1;
+        margin: auto;
+    }
+
+    .panel-right {
+        flex: 1;
+        margin: auto;
+    }
+}
+
+.error {
+    color: #ff0000;
+}
+
+@media (min-width: 576px) {
+    ::ng-deep {
+        .mat-horizontal-stepper-header-container {
+            width: 50% !important;
+            margin: auto;
+        }
+    }
+
+    .panel-left-right {
+        display: flex;
+
+        .panel-right {
+            text-align: right;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    ::ng-deep {
+        .mat-horizontal-stepper-header-container {
+            width: 50% !important;
+            margin: auto;
+        }
+    }
+
+    .panel-left-right {
+        display: flex;
+
+        .panel-right {
+            text-align: right;
+        }
+    }
+}
+
+::ng-deep {
+    .mat-step-header {
+        display: block !important;
+        text-align: -webkit-center;
+    }
+}

@@ -1,0 +1,12 @@
+<div class="panel-left-right" [formGroup]="saleAmountForm">
+    <div class="panel-left">
+        <p>1. Total value of taxable electronic service exclusive of VAT</p>
+    </div>
+
+    <div class="panel-right">
+        <mat-form-field class="example-form-field">
+            <input matInput type="number" formControlName="saleAmount" [(ngModel)]="formService.saleAmount"
+                autocomplete="off" (focusout)="onChange()">
+        </mat-form-field>
+    </div>
+</div>

@@ -1,0 +1,72 @@
+<mat-card class="card-border">
+    <mat-card-content>
+        <form *ngFor="let data of dataSource">
+            <div class="mt-0 panel-left-right border-bottom">
+                <div class="panel-left">
+                    <h2><b>Tax Filing Detail</b></h2>
+                </div>
+            </div>
+
+            <p class="mt-2">
+                <b>Type of filing</b>
+                <span class="ml-4">{{data.filingType}}</span>
+            </p>
+            <p class="mt-2">
+                <b>VAT Month</b>
+                <span class="ml-4">{{data.month + ' ' + data.year}}</span>
+            </p>
+
+            <div class="mt-5 panel-left-right border-bottom">
+                <div class="panel-left">
+                    <h2><b>Tax Computation</b></h2>
+                </div>
+            </div>
+
+            <div class="mt-2 panel-left-right">
+                <div class="panel-left">
+                    <p><b>Total value of taxable electronic service exclusive of VAT</b></p>
+                </div>
+
+                <div class="panel-right">
+                    {{data.saleAmount | number: '1.2'}} THB
+                </div>
+            </div>
+
+            <div class="panel-left-right">
+                <div class="panel-left">
+                    <p>
+                        <b>Total VAT to be remitted</b> (7% of Total value of taxable electronic service exclusive of
+                        VAT)
+                    </p>
+                </div>
+
+                <div class="panel-right">
+                    {{data.taxAmount | number: '1.2'}} THB
+                </div>
+            </div>
+
+            <div class="panel-left-right">
+                <div class="panel-left">
+                    <p><b>Total Amount Payable</b></p>
+                </div>
+
+                <div class="panel-right">
+                    {{data.totalAmount | number: '1.2'}} THB
+                </div>
+            </div>
+
+            <div class="mt-5 panel-left-right border-bottom">
+                <div class="panel-left">
+                    <h2><b>Declaration</b></h2>
+                </div>
+            </div>
+
+            <p class="mt-2">
+                <b>
+                    I hereby certify that information given above are true and correct and agree to be bound by such
+                    information
+                </b>
+            </p>
+        </form>
+    </mat-card-content>
+</mat-card>
