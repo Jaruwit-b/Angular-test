@@ -1,6 +1,11 @@
 # Angular CLI (12+)
 Install the Angular CLI globally:
 - npm i @angular/cli
+- [Getting started](https://angular.io/start)
+- [CLI](https://angular.io/cli)
+
+# Prerequisites
+Install [Node.js](https://nodejs.org/en/) which includes [Node Package Manager](https://www.npmjs.com/get-npm)
 
 # Run
 
