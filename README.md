@@ -1,4 +1,8 @@
-#Run
+# Angular CLI (12+)
+Install the Angular CLI globally:
+- npm i @angular/cli
+
+# Run
 
 1. Open Command Prompt and navigates directory to the Angular-test folder.
 - cd Angular-test
