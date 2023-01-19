@@ -7,8 +7,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { SharedModule } from '../app/shared/shared.module';
 
+import { NgxFormatFieldModule } from 'ngx-format-field';
 import { ToastrModule } from 'ngx-toastr';
-import { NumberFormatPipe } from './shared/number.pipe';
 import { FilingTypeComponent } from './components/filing-type/filing-type.component';
 import { MonthComponent } from './components/month/month.component';
 import { YearComponent } from './components/year/year.component';
@@ -23,7 +23,6 @@ import { DialogComponent } from './components/dialog/dialog.component';
 @NgModule({
   declarations: [
     AppComponent,
-    NumberFormatPipe,
     FilingTypeComponent,
     MonthComponent,
     YearComponent,
@@ -39,15 +38,12 @@ import { DialogComponent } from './components/dialog/dialog.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     SharedModule,
-    // ToastrModule
+    NgxFormatFieldModule,
     ToastrModule.forRoot()
   ],
   providers: [
-    DecimalPipe,
-    NumberFormatPipe,
-    // ToastrModule
+    DecimalPipe
   ],
-  bootstrap: [AppComponent],
-  exports: [NumberFormatPipe]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

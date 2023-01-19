@@ -14,6 +14,8 @@ export class TaxAmountComponent implements OnInit {
 
   taxAmountForm: FormGroup;
 
+  COMMA: string = 'COMMA';
+
   constructor(
     private _formBuilder: FormBuilder,
     public formService: FormService

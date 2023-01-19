@@ -4,9 +4,9 @@
     </div>
 
     <div class="panel-right">
-        <mat-form-field class="example-form-field">
-            <input matInput type="number" formControlName="saleAmount" [(ngModel)]="formService.saleAmount"
-                autocomplete="off" (focusout)="onChange()">
+        <mat-form-field>
+            <input matInput type="text" formControlName="saleAmount" [(ngModel)]="formService.saleAmount"
+                autocomplete="off" [appFormatFields]="COMMA" (focusout)="onChange()">
         </mat-form-field>
     </div>
 </div>

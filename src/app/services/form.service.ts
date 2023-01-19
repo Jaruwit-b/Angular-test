@@ -8,9 +8,9 @@ export class FormService {
   filingType: any;
   month: any;
   year: any;
-  saleAmount: any;
-  totalVat: any;
-  taxAmount: any;
+  saleAmount: any = null;
+  totalVat: any = null;
+  taxAmount: any = null;
   surcharge: any = 0.00;
   penalty: any = 0.00;
   totalAmount: any = 0.00;

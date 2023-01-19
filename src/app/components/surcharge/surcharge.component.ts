@@ -11,6 +11,8 @@ export class SurchargeComponent implements OnInit {
 
   surchargeForm: FormGroup;
 
+  COMMA: string = 'COMMA';
+
   constructor(
     private _formBuilder: FormBuilder,
     public formService: FormService

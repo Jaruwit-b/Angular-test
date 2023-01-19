@@ -1,3 +1,8 @@
+.form-control {
+    text-align: right;
+    width: 100%;
+}
+
 .panel-left-right {
     display: block;
 
@@ -13,27 +18,37 @@
 }
 
 @media (min-width: 576px) {
+    .form-control {
+        width: 50%;
+    }
+
     .panel-left-right {
         display: flex;
 
         .panel-right {
             text-align: right;
+            text-align: -webkit-right;
         }
     }
 }
 
 @media (min-width: 1200px) {
+    .form-control {
+        width: 50%;
+    }
+
     .panel-left-right {
         display: flex;
 
         .panel-right {
             text-align: right;
+            text-align: -webkit-right;
         }
     }
 }
 
 ::ng-deep {
-    input.mat-input-element {
+    input {
         text-align: right;
     }
 }

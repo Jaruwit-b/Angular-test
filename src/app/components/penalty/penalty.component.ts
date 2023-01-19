@@ -11,6 +11,8 @@ export class PenaltyComponent implements OnInit {
 
   penaltyForm: FormGroup;
 
+  COMMA: string = 'COMMA';
+
   constructor(
     private _formBuilder: FormBuilder,
     public formService: FormService

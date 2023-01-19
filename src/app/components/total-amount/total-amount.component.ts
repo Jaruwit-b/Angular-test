@@ -11,6 +11,8 @@ export class TotalAmountComponent implements OnInit {
 
   totalAmountForm: FormGroup;
 
+  COMMA: string = 'COMMA';
+
   constructor(
     private _formBuilder: FormBuilder,
     public formService: FormService

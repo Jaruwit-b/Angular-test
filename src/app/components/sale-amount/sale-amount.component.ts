@@ -12,6 +12,8 @@ export class SaleAmountComponent implements OnInit {
 
   saleAmountForm: FormGroup;
 
+  COMMA: string = 'COMMA';
+
   constructor(
     private _formBuilder: FormBuilder,
     public taxAmountComponent: TaxAmountComponent,
@@ -26,6 +28,12 @@ export class SaleAmountComponent implements OnInit {
   }
 
   onChange() {
+    this.saleAmountForm.patchValue({
+      saleAmount: this.saleAmountForm.value.saleAmount
+    })
+
+    this.formService.saleAmount = this.saleAmountForm.value.saleAmount;
+
     if (this.formService.saleAmount) {
       this.formService.totalVat = parseFloat((this.formService.saleAmount * 0.07).toFixed(2));
 

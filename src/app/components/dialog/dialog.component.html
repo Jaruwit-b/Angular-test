@@ -1,4 +1,10 @@
-<mat-card class="card-border">
+<div class="p-2">
+    <button mat-icon-button class="close-button" [mat-dialog-close]="true">
+        <mat-icon class="close-icon" color="black">close</mat-icon>
+    </button>
+</div>
+
+<mat-card class="mt-4 card-border">
     <mat-card-content>
         <form *ngFor="let data of dataSource">
             <div class="mt-0 panel-left-right border-bottom">
